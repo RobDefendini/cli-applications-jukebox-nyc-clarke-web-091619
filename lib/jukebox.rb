@@ -85,5 +85,5 @@ while command_input == nil do
     run(songs)
   end
 end
-
+command_input = nil
 end
