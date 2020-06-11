@@ -68,6 +68,7 @@ def run(songs)
   puts "Please enter a command:"
   command_input = gets.chomp
 
+while command_input == nil do 
   if command_input.strip == "exit"
     exit_jukebox
   elsif command_input == "list"
@@ -83,5 +84,6 @@ def run(songs)
     puts "Invalid input, please try again"
     run(songs)
   end
+end
 
 end
