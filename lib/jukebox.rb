@@ -27,7 +27,7 @@ def play(songs)
   choice = gets.strip
     songs.each do |x|
       
-      if choice.to_i.include?(1, songs.length)
+      if choice.to_i.between?(1, songs.length)
         puts "Playing #{songs[choice.to_i-1]}"
         return
       elsif x.include?(choice)
