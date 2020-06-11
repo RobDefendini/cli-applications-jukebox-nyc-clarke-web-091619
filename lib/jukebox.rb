@@ -24,14 +24,14 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  song_input = gets.strip
+  choice = gets.strip
     songs.each do |x|
       
-      if song_input.to_i.between?(1, songs.length)
-        puts "Playing #{songs[song_input.to_i-1]}"
+      if choice.to_i.between?(1, songs.length)
+        puts "Playing #{songs[choice.to_i-1]}"
         return
-      elsif x.include?(song_input)
-        puts "Playing #{song_input}"
+      elsif x.include?(choice)
+        puts "Playing #{choice}"
         return
       else
         puts "Invalid input, please try again"
