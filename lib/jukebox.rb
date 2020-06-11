@@ -24,7 +24,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  song_input = gets.chomp
+  song_input = gets.strip
     songs.each do |x|
       
       if song_input.to_i.between?(1, songs.length)
