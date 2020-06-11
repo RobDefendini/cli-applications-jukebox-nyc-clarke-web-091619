@@ -78,7 +78,7 @@ def run(songs)
     run(songs) 
   elsif command_input === "help"
     help
-    #run(songs)
+    run(songs)
   else
     puts "Invalid input, please try again"
     run(songs)
