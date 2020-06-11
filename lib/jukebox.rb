@@ -35,6 +35,7 @@ def play(songs)
         return
       else
         puts "Invalid input, please try again"
+        return
       end
       
     end
@@ -63,12 +64,11 @@ end
 
 
 def run(songs)
-
+ 
   help
   puts "Please enter a command:"
   command_input = gets.chomp
 
-while command_input == nil do 
   if command_input.strip == "exit"
     exit_jukebox
   elsif command_input == "list"
@@ -84,6 +84,5 @@ while command_input == nil do
     puts "Invalid input, please try again"
     run(songs)
   end
-end
-command_input = nil
+
 end
