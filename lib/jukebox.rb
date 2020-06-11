@@ -24,7 +24,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  choice = gets.chomp
+  choice = gets.strip
   
     songs.each do |x|
       if choice.to_i.between?(1, songs.length)
@@ -85,5 +85,3 @@ def run(songs)
   end
 
 end
-
-run(songs)
