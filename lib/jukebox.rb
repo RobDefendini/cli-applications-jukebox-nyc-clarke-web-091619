@@ -26,6 +26,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   song_input = gets.chomp
     songs.each do |x|
+      
       if song_input.to_i.between?(1, songs.length)
         puts "Playing #{songs[song_input.to_i-1]}"
         return
@@ -35,6 +36,7 @@ def play(songs)
       else
         puts "Invalid input, please try again"
       end
+      
     end
 end
 
